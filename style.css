@@ -121,15 +121,12 @@ footer a {
 
   .desc {
     text-align: left;
-    font-size: 1.5rem
+    font-size: 1.3rem;
   }
 
   h1 {
-    font-size: 4.5rem;
-  }
-
-  button {
-    font-size: 1.5rem;
+    font-size: 3rem;
+    margin-top: 0;
   }
 
   .icon-section {
