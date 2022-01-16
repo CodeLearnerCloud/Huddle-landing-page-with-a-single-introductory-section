@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap');
+
+:root {
+  --fw-normal: 400;
+  --fw-bold: 600;
+  --ff-headline: 'Poppins', sans-serif;
+  --ff-body: 'Open Sans', sans-serif;
+
+  --clr-violet: hsl(257, 40%, 49%);
+  --clr-magenta: hsl(300, 69%, 71%);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--ff-body);
+  font-weight: var(--fw-normal);
+  background-image: url(./images/bg-mobile.svg);
+  background-repeat: no-repeat;
+  background-color: var(--clr-violet);
+  background-size: 100% auto;
+}
+
+.logo {
+  margin: 2rem;
+}
+
+.container {
+  margin: 2rem;
+}
+
+.desc {
+  text-align: center;
+}
+
+.img {
+  width: 100%;
+}
+
+h1 {
+  color: #fff;
+  font-family: var(--ff-headline);
+  font-weight: var(--fw-bold);
+  margin-top: 2rem;
+  text-align: center;
+}
+
+p {
+  color: #fff;
+  margin-top: 1rem;
+  text-align: center;
+}
+
+button {
+  font-family: var(--ff-headline);
+  padding: .9rem 5rem;
+  border-radius: 2rem;
+  color: var(--clr-violet);
+  border: none;
+  background: #fff;
+  margin-top: 1rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, .3);
+}
+
+button:hover {
+  background: var(--clr-magenta);
+  color: #fff;
+}
+
+.icon-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.a {
+  border: 1px solid #fff;
+  border-radius: 50%;
+  color: #fff;
+  width: 2rem;
+  height: 2rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  margin-left: 1em;
+}
+
+footer {
+  color: #fff;
+  margin-top: 2rem;
+  text-align: center;
+} 
+
+footer a {
+  color: #fff;
+}
+
+@media screen and (min-width: 500px){
+  body {
+    background-image: url(./images/bg-desktop.svg);
+    background-size: cover;
+  }
+
+  .container {
+    display: flex;
+    gap: 2rem;
+  }
+
+  h1, p {
+    text-align: left;
+  }
+
+  .container div {
+    flex: 1;
+  }
+
+  .desc {
+    text-align: left;
+    font-size: 1.5rem
+  }
+
+  h1 {
+    font-size: 4.5rem;
+  }
+
+  button {
+    font-size: 1.5rem;
+  }
+
+  .icon-section {
+    justify-content: flex-end;
+    margin-right: 4rem;
+  }
+}
